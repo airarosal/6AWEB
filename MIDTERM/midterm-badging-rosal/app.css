@@ -1,0 +1,8 @@
+nav a {
+  margin-right: 15px;
+}
+
+.active {
+  color: blue;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<div class="container">
+  <h2>Contact</h2>
+
+  <div class="contact-layout">
+    <div class="item-card">
+      <input class="purple-input" placeholder="Name" [(ngModel)]="name"><br>
+      <input class="purple-input" placeholder="Email" [(ngModel)]="email"><br>
+      <textarea class="purple-input" placeholder="Message" [(ngModel)]="message"></textarea><br>
+      <button class="btn-purple">Submit</button>
+    </div>
+
+    <div class="item-card preview-box">
+      <h3>Form Preview</h3>
+      <p>Name: {{ name | uppercase }}</p>
+      <p>Email: {{ email }}</p>
+      <p>Message: {{ message }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Welcome to Community Help Desk</h2>
+
+  <h3>Latest Updates</h3>
+
+  <div class="card-grid">
+    <div class="item-card" *ngFor="let post of latest$ | async">
+      <b>{{ post.title | uppercase }}</b><br>
+      {{ post.body | truncate:60 }}
+    </div>
+  </div>
+</div>
